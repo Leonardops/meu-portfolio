@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
 
     <nav class="navbar">
-    <div class="nav-container">
-        <span class="logo">Leonardo</span>
+        <div class="nav-container">
+            <span class="logo">Leonardo</span>
 
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </div>
-</nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <header id="home" class="hero">
         <h1>Leonardo Pires</h1>
         <p>Desenvolvedor em formação | Python</p>
     </header>
+
+    <section class="card">
+        <h2>Tecnologias</h2>
+
+        <div class="tech-list">
+
+            <div class="tech">
+                <img src="{{ url_for('static', filename='images/python.svg') }}" alt="Python">
+                <span>Python</span>
+            </div>
+            <div class="tech">
+                <img src="{{ url_for('static', filename='images/Flask.svg') }}" alt="Flask">
+                <span>Flask</span>
+            </div>
+
+            <div class="tech">
+                <img src="{{ url_for('static', filename='images/HTML5.svg') }}" alt="HTML">
+                <span>HTML</span>
+            </div>
+
+            <div class="tech">
+                <img src="{{ url_for('static', filename='images/CSS3.svg') }}" alt="CSS">
+                <span>CSS</span>
+            </div>
+
+            <div class="tech">
+                <img src="{{ url_for('static', filename='images/Git.svg') }}" alt="Git">
+                <span>Git</span>
+            </div>
+
+            <div class="tech">
+                <img src="{{ url_for('static', filename='images/GitHub.svg') }}" alt="GitHub">
+                <span>GitHub</span>
+            </div>
+        </div>
+
+    </section>
 
     <main class="container">
 
@@ -39,50 +78,37 @@
 
             <div class="projects-grid">
 
-        <div class="project-card">
-            <h3>Portfólio Pessoal</h3>
-            <p>Site desenvolvido com Flask, HTML e CSS para apresentar meus projetos.</p>
-            <a href="#" target="_blank">Ver projeto</a>
-        </div>
+                <div class="project-card">
+                    <h3>Portfólio Pessoal</h3>
+                    <p>Site desenvolvido com Flask, HTML e CSS para apresentar meus projetos.</p>
+                    <a href="#" target="_blank">Ver projeto</a>
+                </div>
 
-        <div class="project-card">
-            <h3>Projeto em Python</h3>
-            <p>Pequeno projeto em Python para praticar lógica e estrutura.</p>
-            <a href="#" target="_blank">Ver projeto</a>
-        </div>
+                <div class="project-card">
+                    <h3>Projeto em Python</h3>
+                    <p>Pequeno projeto em Python para praticar lógica e estrutura.</p>
+                    <a href="#" target="_blank">Ver projeto</a>
+                </div>
 
-        <div class="project-card">
-            <h3>Projeto Futuro</h3>
-            <p>Em breve mais projetos aqui 👀</p>
-            <a href="#" target="_blank">Em breve</a>
-        </div>
+                <div class="project-card">
+                    <h3>Projeto Futuro</h3>
+                    <p>Em breve mais projetos aqui 👀</p>
+                    <a href="#" target="_blank">Em breve</a>
+                </div>
 
             </div>
         </section>
 
-
-        <section class="card">
-               <h2>Tecnologias</h2>
-               
-               <div class="tech-list">
-                    <span class="tech">Python</span>
-                    <span class="tech">Flask</span>
-                    <span class="tech">HTML</span>
-                    <span class="tech">CSS</span>
-                    <span class="tech">Git</span>
-                    <span class="tech">GitHub</span>
-               </div>
-        </section>
-
         <section id="contato" class="card">
             <h2>Contato</h2>
-            
+
             <p>Vamos conversar? Me encontre nos links abaixo 👇</p>
 
             <div class="contact-links">
                 <a href="https://github.com/Leonardops" target="_blank">GitHub</a>
                 <a href="https://linkedin.com/in/leonardopsvictor" target="_blank">LinkedIn</a>
-                <a href="https://mail.google.com/mail/?view=cm&to=leonardovps25@gmail.com&su=Contato pelo Portfólio" target="_blank">Email</a>
+                <a href="https://mail.google.com/mail/?view=cm&to=leonardovps25@gmail.com&su=Contato pelo Portfólio"
+                    target="_blank">Email</a>
             </div>
 
         </section>

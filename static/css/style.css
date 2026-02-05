@@ -149,11 +149,23 @@ body {
 }
 
 .tech {
-    background-color: #111;
-    color: #fff;
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-size: 13px;
+    background: #f1f3f5;
+    color: #222;
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: default;
+}
+
+.tech:hover {
+    background: #e0e7ff;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
 }
 
 /* ===== CONTATO ===== */
@@ -181,4 +193,9 @@ footer {
     padding: 20px;
     color: #777;
     font-size: 14px;
+}
+
+.tech img {
+    width: 20px;
+    height: 20px;
 }
