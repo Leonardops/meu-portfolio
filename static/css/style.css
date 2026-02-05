@@ -103,3 +103,76 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+/*TECNOLOGIAS*/
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.tech {
+    background: #1e1e1e;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.tech:hover {
+    background: #444;
+    transform: scale(1.05);
+}
+
+/*PROJETOS*/
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0, 1);
+}
+
+/* CONTATO */
+
+.contact-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    background: #1e1e1e;
+    color: white;
+    padding: 10px 16px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background: #444;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+}
