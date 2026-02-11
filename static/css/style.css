@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
-/* RESET BÁSICO */
+:root {
+    --bg-main: #0F172A;
+    --bg-secondary: #020617;
+
+    --card-bg: rgba(2, 6, 23, 0.85);
+
+    --text-main: #E5E7EB;
+    --text-secondary: #94A3B8;
+
+    --accent: #38BDF8;
+
+    --border-soft: rgba(148, 163, 184, 0.15);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,16 +24,17 @@
 /* ESTILO GERAL */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(180deg, #0f3d2e 0%, #1f5c45 100%);
-    color: #e8f5ef;
+    background: linear-gradient(180deg, #020617, #0F172A);
+    color: var(--text-main);
     line-height: 1.6;
+    font-size: 16px;
 }
 
 /* NAVBAR */
 .navbar {
-    background-color: #0b2f23;
-    /* verde musgo escuro */
-    padding: 15px 0;
+    background-color: rgba(2, 6, 23, 00.3s);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border-soft);
 }
 
 .nav-container {
@@ -44,32 +59,29 @@ body {
 }
 
 .nav-links a {
-    color: #d9fbee;
-    text-decoration: none;
-    font-weight: 500;
+    color: var(--text-main);
 }
 
 .nav-links a:hover {
-    text-decoration: underline;
+    color: var(--accent);
 }
 
 /* HERO */
 .hero {
-    background-color: #124a38;
-    /* verde mais claro */
+    background: radial-gradient(circle at top, #1E293B, #020617);
     color: #eafff7;
     padding: 80px 20px;
     text-align: center;
 }
 
 .hero h1 {
+    color: var(--text-main);
     font-size: 36px;
-    margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 18px;
-    opacity: 0.9;
+    font-size: 15px;
+    color: var(--text-secondary);
 }
 
 /* CONTAINER PRINCIPAL */
@@ -81,17 +93,17 @@ body {
 
 /* BALÕES BRANCOS (CARDS) */
 .card {
-    background-color: #ffffff;
-    border-radius: 18px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-soft);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
     padding: 30px;
-    margin-bottom: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    color: #1e2d28;
 }
 
 /*.card h2 {
     font-size: 22px;
     margin-bottom: 15px;
+    font-size: 22px;
 }*/
 
 /* ===== PROJETOS ===== */
@@ -109,10 +121,11 @@ body {
 
 /* CARD DE PROJETO */
 .project-card {
-    background-color: #1b3a2e;
-    color: #eafff7;
+    background-color: rgba(15, 23, 42, 0.9);
+    color: var(--text-main);
     padding: 25px;
     border-radius: 16px;
+    border: 1px solid var(--border-soft);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -128,8 +141,7 @@ body {
 }
 
 .project-card a {
-    color: #7fffd4;
-    font-weight: 600;
+    color: var(--accent);
     text-decoration: none;
 }
 
@@ -154,26 +166,25 @@ body {
 }
 
 .tech {
-    background: #e6f4ee;
-    color: #0f3d2e;
-    padding: 12px 16px;
-    border-radius: 12px;
+    background: rgba(15, 23, 42, 0.8);
+    color: var(--text-main);
+    padding: 14px 18px;
+    border-radius: 14px;
     font-size: 14px;
-    font-weight: 500;
+    border: 1px solid var(--border-soft);
     transition: all 0.25s ease;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
 
-    cursor: default;
 }
 
 .tech:hover {
-    background: #b9f5dc;
     transform: translateY(-4px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+    border-color: var(--accent);
 }
 
 /* ===== CONTATO ===== */
@@ -186,9 +197,8 @@ body {
 }
 
 .contact-links a {
-    color: #0f3d2e;
-    font-weight: bold;
-    text-decoration: none;
+    color: var(--accent);
+    font-weight: 500;
 }
 
 .contact-links a:hover {
@@ -199,7 +209,7 @@ body {
 footer {
     text-align: center;
     padding: 20px;
-    color: #cceee1;
+    color: var(--text-secondary);
     font-size: 14px;
 }
 
@@ -207,4 +217,8 @@ footer {
 .tech img {
     width: 40px;
     height: 40px;
+}
+
+.tech-white img {
+    filter: brightness(0) invert(1);
 }
