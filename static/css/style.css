@@ -32,7 +32,7 @@ body {
 
 /* NAVBAR */
 .navbar {
-    background-color: rgba(2, 6, 23, 0.3s);
+    background-color: rgba(2, 6, 23, 0.3);
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border-soft);
 }
@@ -102,7 +102,6 @@ body {
 .card h2 {
     font-size: 22px;
     margin-bottom: 15px;
-    font-size: 22px;
 }
 
 /* ===== PROJETOS ===== */
@@ -222,6 +221,12 @@ footer {
     filter: brightness(0) invert(1);
 }
 
+.card h2.section-title {
+    font-size: 17px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
 /* ===== RESPONSIVIDADE ===== */
 
 @media (max-width: 768px) {
@@ -247,7 +252,7 @@ footer {
         font-size: 12px;
     }
 
-    projects-grid {
+    .projects-grid {
         gap: 18px;
     }
 
@@ -277,4 +282,28 @@ footer {
         font-size: 14px;
     }
 
+    .section-title {
+        font-size: 15px;
+    }
+
+    .project-card p,
+
+    #sobre p,
+
+    #contato p {
+        font-size: 13px;
+    }
+
+    .project-card h3 {
+        font-size: 15px;
+    }
+
+
+    .project-card p {
+        font-size: 12.5px;
+    }
+
+    .project-card a {
+        font-size: 13px;
+    }
 }
