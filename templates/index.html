@@ -79,23 +79,13 @@
 
             <div class="projects-grid">
 
+                {% for projeto in projetos %}
                 <div class="project-card">
-                    <h3>Portfólio Pessoal</h3>
-                    <p>Site desenvolvido com Flask, HTML e CSS para apresentar meus projetos.</p>
-                    <a href="#" target="_blank">Ver projeto</a>
+                    <h3>{{ projeto.titulo }}</h3>
+                    <p>{{ projeto.descricao }}</p>
+                    <a href="{{ projeto.link }}" target="_blank">Ver projeto</a>
                 </div>
-
-                <div class="project-card">
-                    <h3>Projeto em Python</h3>
-                    <p>Pequeno projeto em Python para praticar lógica e estrutura.</p>
-                    <a href="#" target="_blank">Ver projeto</a>
-                </div>
-
-                <div class="project-card">
-                    <h3>Projeto Futuro</h3>
-                    <p>Em breve mais projetos aqui 👀</p>
-                    <a href="#" target="_blank">Em breve</a>
-                </div>
+                {% endfor %}
 
             </div>
         </section>
