@@ -4,9 +4,9 @@ app = Flask(__name__)
 
 projetos = [
     {
-        "titulo": "Portfolio pessoal",
-        "descricao": "Site desenvolvido com flask, html e css.",
-        "link": "#"
+        "titulo": "Link bio",
+        "descricao": "Cartão de visitas pessoal online.",
+        "link": "https://leonardops.github.io/projetoDevLinks/"
     },
     {
         "titulo": "Sistema em Python",
